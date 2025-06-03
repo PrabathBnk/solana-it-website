@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MapPin, Clock, Briefcase, Users, Heart, Zap, ArrowRight } from 'lucide-react';
+import { MapPin, Clock, Users, Heart, Zap, ArrowRight, CircleAlert } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -30,88 +30,88 @@ const Careers = () => {
   ];
 
   const openPositions = [
-    {
-      title: 'Senior Full Stack Developer',
-      department: 'Engineering',
-      location: 'San Francisco, CA / Remote',
-      type: 'Full-time',
-      experience: '5+ years',
-      description: 'Join our engineering team to build scalable web applications using modern technologies.',
-      requirements: ['5+ years of experience with React and Node.js', 'Experience with cloud platforms (AWS/Azure)', 'Strong problem-solving skills'],
-      responsibilities: ['Develop and maintain web applications', 'Collaborate with cross-functional teams', 'Mentor junior developers']
-    },
-    {
-      title: 'Cybersecurity Specialist',
-      department: 'Security',
-      location: 'San Francisco, CA',
-      type: 'Full-time',
-      experience: '3+ years',
-      description: 'Help protect our clients from cyber threats with cutting-edge security solutions.',
-      requirements: ['3+ years in cybersecurity', 'Knowledge of security frameworks', 'Security certifications preferred'],
-      responsibilities: ['Conduct security assessments', 'Implement security measures', 'Monitor security incidents']
-    },
-    {
-      title: 'DevOps Engineer',
-      department: 'Infrastructure',
-      location: 'Remote',
-      type: 'Full-time',
-      experience: '4+ years',
-      description: 'Automate and optimize our development and deployment processes.',
-      requirements: ['Experience with CI/CD pipelines', 'Knowledge of containerization', 'Cloud infrastructure experience'],
-      responsibilities: ['Manage cloud infrastructure', 'Automate deployment processes', 'Monitor system performance']
-    },
-    {
-      title: 'UI/UX Designer',
-      department: 'Design',
-      location: 'San Francisco, CA / Remote',
-      type: 'Full-time',
-      experience: '3+ years',
-      description: 'Create beautiful and intuitive user experiences for our clients.',
-      requirements: ['3+ years of UI/UX design experience', 'Proficiency in design tools', 'Understanding of user-centered design'],
-      responsibilities: ['Design user interfaces', 'Conduct user research', 'Create design systems']
-    },
-    {
-      title: 'Project Manager',
-      department: 'Operations',
-      location: 'San Francisco, CA',
-      type: 'Full-time',
-      experience: '4+ years',
-      description: 'Lead cross-functional teams to deliver projects on time and within budget.',
-      requirements: ['PMP certification preferred', 'Experience with Agile methodologies', 'Strong communication skills'],
-      responsibilities: ['Manage project timelines', 'Coordinate team activities', 'Communicate with stakeholders']
-    },
-    {
-      title: 'Data Scientist',
-      department: 'Analytics',
-      location: 'Remote',
-      type: 'Full-time',
-      experience: '3+ years',
-      description: 'Extract insights from data to drive business decisions and innovation.',
-      requirements: ['3+ years in data science', 'Python/R programming skills', 'Machine learning experience'],
-      responsibilities: ['Analyze complex datasets', 'Build predictive models', 'Present findings to stakeholders']
-    }
+    // {
+    //   title: 'Senior Full Stack Developer',
+    //   department: 'Engineering',
+    //   location: 'San Francisco, CA / Remote',
+    //   type: 'Full-time',
+    //   experience: '5+ years',
+    //   description: 'Join our engineering team to build scalable web applications using modern technologies.',
+    //   requirements: ['5+ years of experience with React and Node.js', 'Experience with cloud platforms (AWS/Azure)', 'Strong problem-solving skills'],
+    //   responsibilities: ['Develop and maintain web applications', 'Collaborate with cross-functional teams', 'Mentor junior developers']
+    // },
+    // {
+    //   title: 'Cybersecurity Specialist',
+    //   department: 'Security',
+    //   location: 'San Francisco, CA',
+    //   type: 'Full-time',
+    //   experience: '3+ years',
+    //   description: 'Help protect our clients from cyber threats with cutting-edge security solutions.',
+    //   requirements: ['3+ years in cybersecurity', 'Knowledge of security frameworks', 'Security certifications preferred'],
+    //   responsibilities: ['Conduct security assessments', 'Implement security measures', 'Monitor security incidents']
+    // },
+    // {
+    //   title: 'DevOps Engineer',
+    //   department: 'Infrastructure',
+    //   location: 'Remote',
+    //   type: 'Full-time',
+    //   experience: '4+ years',
+    //   description: 'Automate and optimize our development and deployment processes.',
+    //   requirements: ['Experience with CI/CD pipelines', 'Knowledge of containerization', 'Cloud infrastructure experience'],
+    //   responsibilities: ['Manage cloud infrastructure', 'Automate deployment processes', 'Monitor system performance']
+    // },
+    // {
+    //   title: 'UI/UX Designer',
+    //   department: 'Design',
+    //   location: 'San Francisco, CA / Remote',
+    //   type: 'Full-time',
+    //   experience: '3+ years',
+    //   description: 'Create beautiful and intuitive user experiences for our clients.',
+    //   requirements: ['3+ years of UI/UX design experience', 'Proficiency in design tools', 'Understanding of user-centered design'],
+    //   responsibilities: ['Design user interfaces', 'Conduct user research', 'Create design systems']
+    // },
+    // {
+    //   title: 'Project Manager',
+    //   department: 'Operations',
+    //   location: 'San Francisco, CA',
+    //   type: 'Full-time',
+    //   experience: '4+ years',
+    //   description: 'Lead cross-functional teams to deliver projects on time and within budget.',
+    //   requirements: ['PMP certification preferred', 'Experience with Agile methodologies', 'Strong communication skills'],
+    //   responsibilities: ['Manage project timelines', 'Coordinate team activities', 'Communicate with stakeholders']
+    // },
+    // {
+    //   title: 'Data Scientist',
+    //   department: 'Analytics',
+    //   location: 'Remote',
+    //   type: 'Full-time',
+    //   experience: '3+ years',
+    //   description: 'Extract insights from data to drive business decisions and innovation.',
+    //   requirements: ['3+ years in data science', 'Python/R programming skills', 'Machine learning experience'],
+    //   responsibilities: ['Analyze complex datasets', 'Build predictive models', 'Present findings to stakeholders']
+    // }
   ];
 
   const testimonials = [
     {
-      quote: "TechFlow has provided me with incredible opportunities to grow both professionally and personally. The team is supportive and the work is challenging in the best way.",
-      author: "Sarah Chen",
+      quote: "Solana IT has provided me with incredible opportunities to grow both professionally and personally. The team is supportive and the work is challenging in the best way.",
+      author: "Chanuka Jeewantha",
       position: "Senior Developer",
-      years: "3 years at TechFlow"
+      years: "2 years at Solana IT"
     },
     {
       quote: "The company culture here is amazing. Everyone is passionate about technology and helping each other succeed. I couldn't ask for a better workplace.",
-      author: "Michael Rodriguez",
-      position: "DevOps Engineer",
+      author: "Thilina Oshan",
+      position: "Font-end Developer",
       years: "2 years at TechFlow"
     },
     {
-      quote: "What I love most about working here is the variety of projects and the opportunity to work with cutting-edge technologies. Every day brings new challenges.",
-      author: "Emily Johnson",
-      position: "Cybersecurity Specialist",
-      years: "4 years at TechFlow"
+      quote: "I collaborated with talented engineers at Solana IT to bring creative ideas to life, prioritizing user experience and innovation in every thrilling project.",
+      author: "Prabath Banuka",
+      position: "UI/UX Designer",
+      years: "2 years at Solana IT"
     }
-  ];
+    ];
 
   return (
     <div className="min-h-screen">
@@ -162,8 +162,11 @@ const Careers = () => {
               Explore exciting opportunities to grow your career with us.
             </p>
           </div>
-
-          <div className="space-y-6">
+          <div className="text-center text-gray-600 py-8 flex items-center justify-center">
+            <CircleAlert className="h-6 w-6 mr-3" />
+            <h3 className="font-medium text-lg inline-block align-middle">Currently, there are no open positions available.</h3>
+          </div>
+          {/* <div className="space-y-6">
             {openPositions.map((position, index) => (
               <Card key={index} className="border-0 shadow-lg bg-white">
                 <CardContent className="p-8">
@@ -225,7 +228,7 @@ const Careers = () => {
                 </CardContent>
               </Card>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
 
