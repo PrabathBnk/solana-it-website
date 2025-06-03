@@ -26,10 +26,8 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 gradient-blue rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">S</span>
-            </div>
-            <span className="text-xl font-bold text-gray-900">Solana IT</span>
+            <img src="/images/logo-icon.svg" alt="Solana IT Icon" className="w-12 h-12 rounded-lg" />
+            <img src="/images/logo-name.svg" alt="Solana IT Logo" className="h-4" />
           </Link>
 
           {/* Desktop Navigation */}
