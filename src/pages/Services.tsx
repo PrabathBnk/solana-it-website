@@ -1,53 +1,74 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Code, Shield, Cloud, Users, Database, Settings, CheckCircle, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import { Code, Monitor, Globe, Smartphone, Bot, BrainCircuit, ServerCog, AppWindow, CheckCircle, ArrowRight, Store } from 'lucide-react';
 
 const Services = () => {
   const services = [
     {
       icon: Code,
-      title: 'Software Development',
-      description: 'Custom software solutions built with cutting-edge technologies to meet your specific business needs.',
-      features: ['Web Applications', 'Mobile Apps', 'API Development', 'Legacy System Modernization'],
-      technologies: ['React', 'Node.js', 'Python', 'Java', 'Flutter']
+      title: "Software Solutions",
+      description: "Custom software solutions built with cutting-edge technologies.",
+      features: ["Tailored functionality", "Scalable architecture", "Seamless integration", "User-friendly interfaces"],
+      technologies: ["TypeScript", "JavaScript", "Python", "Node.js", "React"]
     },
     {
-      icon: Shield,
-      title: 'Cybersecurity',
-      description: 'Comprehensive security solutions to protect your digital assets from evolving threats.',
-      features: ['Security Audits', 'Penetration Testing', 'Compliance Consulting', '24/7 Monitoring'],
-      technologies: ['SIEM', 'Firewall Management', 'Encryption', 'Identity Management']
+      icon: Monitor,
+      title: "Desktop Application Development",
+      description: "Creating robust desktop applications for various platforms.",
+      features: ["Cross-platform compatibility", "High performance", "Offline functionality", "Custom UI/UX"],
+      technologies: ["Electron", "TypeScript", "C#", ".NET", "Qt"]
     },
     {
-      icon: Cloud,
-      title: 'Cloud Solutions',
-      description: 'Scalable cloud infrastructure and migration services for optimal performance and cost efficiency.',
-      features: ['Cloud Migration', 'Infrastructure Management', 'DevOps Implementation', 'Cost Optimization'],
-      technologies: ['AWS', 'Azure', 'Google Cloud', 'Kubernetes', 'Docker']
+      icon: Globe,
+      title: "Web Application Development",
+      description: "Building secure and scalable web applications to enhance your online presence.",
+      features: ["Responsive design", "Secure authentication", "Scalable backend", "Real-time updates"],
+      technologies: ["TypeScript", "React", "Angular", "Node.js", "PostgreSQL"]
     },
     {
-      icon: Users,
-      title: 'IT Consulting',
-      description: 'Strategic IT guidance to optimize your business operations and technology investments.',
-      features: ['Digital Transformation', 'Technology Strategy', 'Process Optimization', 'Vendor Management'],
-      technologies: ['Enterprise Architecture', 'ITIL', 'Agile', 'Lean']
+      icon: Smartphone,
+      title: "Mobile Application Development",
+      description: "Developing intuitive mobile applications for iOS and Android platforms.",
+      features: ["Native performance", "Cross-platform support", "Push notifications", "Intuitive UX"],
+      technologies: ["TypeScript", "React Native", "Flutter", "Swift", "Kotlin"]
     },
     {
-      icon: Database,
-      title: 'Data Analytics',
-      description: 'Transform your data into actionable insights with our advanced analytics solutions.',
-      features: ['Business Intelligence', 'Data Warehousing', 'Predictive Analytics', 'Real-time Dashboards'],
-      technologies: ['SQL', 'Power BI', 'Tableau', 'Python', 'R']
+      icon: Bot,
+      title: "Chatbot Development",
+      description: "Creating intelligent chatbots to enhance customer engagement and support.",
+      features: ["Natural language processing", "24/7 availability", "Multi-platform integration", "Personalized responses"],
+      technologies: ["TypeScript", "Dialogflow", "Rasa", "Node.js", "AWS Lex"]
     },
     {
-      icon: Settings,
-      title: 'DevOps & Automation',
-      description: 'Streamline your development and deployment processes with modern DevOps practices.',
-      features: ['CI/CD Pipelines', 'Infrastructure as Code', 'Monitoring & Logging', 'Automated Testing'],
-      technologies: ['Jenkins', 'GitLab', 'Terraform', 'Ansible', 'Prometheus']
+      icon: BrainCircuit,
+      title: "Machine Learning & AI",
+      description: "Implementing AI solutions to automate processes and gain insights from data.",
+      features: ["Predictive analytics", "Data-driven insights", "Automation", "Model optimization"],
+      technologies: ["TypeScript", "TensorFlow", "PyTorch", "Scikit-learn", "Python"]
+    },
+    {
+      icon: ServerCog,
+      title: "ERP & CRM Systems",
+      description: "Integrating and optimizing business processes and customer relationships with unified ERP and CRM solutions.",
+      features: ["Process automation", "Centralized data", "Real-time reporting", "Modular design"],
+      technologies: ["TypeScript", "Odoo", "SAP", "Oracle NetSuite", "PostgreSQL"]
+    },
+    {
+      icon: AppWindow,
+      title: "SaaS Solutions",
+      description: "Delivering scalable cloud-based software accessible from anywhere.",
+      features: ["Multi-tenant architecture", "Subscription management", "Cloud scalability", "Secure data storage"],
+      technologies: ["TypeScript", "AWS", "Azure", "Node.js", "MongoDB"]
+    },
+    {
+      icon: Store,
+      title: "POS Systems",
+      description: "Custom Point of Sale (POS) systems designed for seamless transactions and business management.",
+      features: ["Real-time inventory tracking", "Multi-store management", "Integrated payment processing", "Sales analytics & reporting"],
+      technologies: ["TypeScript", "React", "Node.js", "SQLite", "Electron"]
     }
   ];
 
@@ -154,11 +175,15 @@ const Services = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact">
               <Button size="lg" variant="secondary" className="text-blue-600 hover:text-blue-700">
-                Get a Quote <ArrowRight className="ml-2 h-5 w-5" />
+                Get a Free Consultation<ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
             <Link to="/portfolio">
-              <Button size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-blue-600">
+              <Button
+                size="lg"
+                variant="outline"
+                className="bg-transparent text-white border-white hover:bg-white hover:text-blue-600"
+              >
                 View Our Work
               </Button>
             </Link>
