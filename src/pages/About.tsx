@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Award, Users, Target, Heart, Linkedin, Twitter } from 'lucide-react';
+import { Award, Users, Target, Heart, Linkedin, Twitter, Smile, Leaf, Gauge } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 const About = () => {
@@ -8,22 +7,37 @@ const About = () => {
     {
       icon: Target,
       title: 'Innovation',
-      description: 'We constantly push boundaries to deliver cutting-edge solutions that drive technological advancement.'
+      description: 'We continuously strive to push the boundaries of technology. Our focus is on providing creative and forward-thinking solutions that anticipate the needs of tomorrow.'
     },
     {
       icon: Heart,
       title: 'Integrity',
-      description: 'We build trust through transparent communication, ethical practices, and reliable service delivery.'
-    },
-    {
-      icon: Users,
-      title: 'Collaboration',
-      description: 'We believe in the power of teamwork, both internally and with our clients, to achieve exceptional results.'
+      description: 'We uphold the highest ethical standards in all our business practices. Transparency, honesty, and trustworthiness are the foundation of every relationship we build.'
     },
     {
       icon: Award,
       title: 'Excellence',
-      description: 'We strive for perfection in every project, maintaining the highest standards of quality and performance.'
+      description: 'We are committed to delivering the highest quality in everything we do, from services to customer experiences. We believe in constant improvement and a relentless pursuit of perfection.'
+    },
+    {
+      icon: Smile,
+      title: 'Customer-Centricity',
+      description: 'Our clients are at the heart of our operations. We prioritize their success by tailoring solutions to meet their unique needs and challenges, ensuring we exceed expectations at every step.'
+    },
+    {
+      icon: Users,
+      title: 'Collaboration',
+      description: 'We believe in the power of teamwork and partnerships. By fostering a collaborative environment, both internally and with our clients, we create stronger, more impactful solutions.'
+    },
+    {
+      icon: Leaf,
+      title: 'Sustainability',
+      description: 'We are dedicated to promoting sustainable growth through environmentally responsible practices and by delivering solutions that enable long-term success for our clients and the world.'
+    },
+    {
+      icon: Gauge,
+      title: 'Agility',
+      description: 'In an ever-changing digital landscape, we adapt quickly to new technologies, market trends, and challenges, ensuring that our solutions remain relevant and ahead of the curve.'
     }
   ];
 
@@ -59,12 +73,13 @@ const About = () => {
   ];
 
   const milestones = [
-    { year: '2014', event: 'TechFlow founded with a vision to innovate IT solutions' },
-    { year: '2016', event: 'Reached 50 successful project deliveries' },
-    { year: '2018', event: 'Expanded team to 25+ professionals' },
-    { year: '2020', event: 'Achieved ISO 27001 certification for security' },
-    { year: '2022', event: 'Crossed 500 projects milestone' },
-    { year: '2024', event: 'Launched AI-powered consulting services' }
+    { year: '2023', event: 'Company Launch' },
+    { year: '2023', event: 'First Service Offering - Custom Software Development' },
+    { year: '2023', event: 'Introduction of Cloud Solutions' },
+    { year: '2024', event: 'Launch of AI & Machine Learning Solutions' },
+    { year: '2024', event: 'First International Client Onboarded' },
+    { year: '2025', event: 'Launch of SaaS Products' },
+    { year: '2025', event: 'Strategic Partnerships & Collaborations' }
   ];
 
   const awards = [
@@ -80,10 +95,10 @@ const About = () => {
       <section className="gradient-blue text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in-up">
-            About TechFlow
+            About Solana IT
           </h1>
-          <p className="text-xl md:text-2xl opacity-90 animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-            Pioneering digital transformation through innovative technology solutions since 2014.
+          <p className="text-xl md:text-2xl opacity-90 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+            Pioneering digital transformation through innovative technology solutions since 2023.
           </p>
         </div>
       </section>
@@ -96,25 +111,26 @@ const About = () => {
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Story</h2>
               <div className="space-y-4 text-lg text-gray-600">
                 <p>
-                  TechFlow was born from a simple yet powerful vision: to make enterprise-grade technology 
-                  accessible to businesses of all sizes. Founded in 2014 by a team of passionate technologists, 
-                  we've grown from a small startup to a trusted partner for companies worldwide.
+                  In the heart of the tech world, where innovation thrives and the future is shaped by technology, SolanaIT was born. It all started with a simple yet powerful idea-to empower businesses and individuals by providing cutting-edge IT solutions that are efficient, scalable, and future-proof.
                 </p>
                 <p>
-                  Our journey began when our founders recognized the gap between cutting-edge technology 
-                  and practical business applications. Today, we bridge that gap by delivering solutions 
-                  that are not only technically excellent but also aligned with real business needs.
+                  At SolanaIT, we understand that the digital landscape is constantly evolving. That's why we are committed to delivering bespoke solutions tailored to meet the unique needs of each client. From software development and cloud services to cybersecurity and data analytics, we bring a combination of expertise, creativity, and passion to the table.
                 </p>
                 <p>
-                  With over a decade of experience and 500+ successful projects, we continue to push 
-                  the boundaries of what's possible in technology, always with our clients' success at heart.
+                  Our journey began with a team of visionary thinkers, driven by a shared purpose – to build a company that would not only lead the way in IT services but also inspire the next generation of technology. As a startup, we’ve faced challenges, but our drive to innovate and our dedication to delivering excellence have been the cornerstone of our success.
+                </p>
+                <p>
+                  With the launch of SolanaIT, we aim to redefine the way businesses harness technology. We believe in creating meaningful, lasting relationships with our clients by being there at every step of their digital transformation journey.
+                </p>
+                <p>
+                  Join us as we embark on this exciting chapter. Let SolanaIT be the trusted partner you need to unlock your true potential in this fast-paced digital world.
                 </p>
               </div>
             </div>
             <div className="relative">
-              <img 
-                src="/placeholder.svg" 
-                alt="TechFlow office" 
+              <img
+                src="/images/about-page-image.png"
+                alt="TechFlow office"
                 className="rounded-lg shadow-xl"
               />
             </div>
@@ -130,20 +146,16 @@ const About = () => {
               <CardContent className="p-0">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
                 <p className="text-lg text-gray-600">
-                  To empower businesses through innovative technology solutions that drive growth, 
-                  efficiency, and competitive advantage. We are committed to delivering excellence 
-                  in every project while fostering long-term partnerships with our clients.
+                  At SolanaIT, our mission is to deliver exceptional and innovative IT solutions that empower businesses to achieve their digital transformation goals. We are committed to providing reliable, secure, and scalable services, fostering lasting partnerships built on trust and collaboration. Through continuous learning, adaptability, and cutting-edge technology, we strive to help our clients navigate the complexities of the digital world and drive sustainable growth.
                 </p>
               </CardContent>
             </Card>
-            
+
             <Card className="border-0 shadow-lg bg-white p-8">
               <CardContent className="p-0">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
                 <p className="text-lg text-gray-600">
-                  To be the global leader in technology innovation, creating a future where 
-                  businesses can leverage technology seamlessly to achieve their goals. We envision 
-                  a world where technology serves as a catalyst for positive change and growth.
+                  To become a global leader in providing innovative, reliable, and transformative IT solutions that empower businesses and individuals to thrive in an ever-evolving digital landscape. We aim to drive progress through cutting-edge technology, exceptional customer service, and sustainable growth, fostering a world where technology bridges gaps and creates limitless opportunities for all.
                 </p>
               </CardContent>
             </Card>
@@ -160,31 +172,36 @@ const About = () => {
               These values guide every decision we make and every solution we deliver.
             </p>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+          <div className="flex flex-wrap justify-center items-stretch">
             {values.map((value, index) => (
-              <Card key={index} className="hover-lift border-0 shadow-lg bg-white text-center">
-                <CardContent className="p-6">
-                  <div className="w-16 h-16 gradient-blue rounded-full flex items-center justify-center mx-auto mb-4">
-                    <value.icon className="h-8 w-8 text-white" />
-                  </div>
-                  <h3 className="text-xl font-semibold mb-3 text-gray-900">{value.title}</h3>
-                  <p className="text-gray-600">{value.description}</p>
-                </CardContent>
-              </Card>
+              <div
+                key={index}
+                className="flex-grow-0 flex-shrink-0 w-full md:w-1/2 lg:w-1/4 flex items-stretch justify-center mb-8"
+              >
+                <Card className="hover-lift border-0 shadow-lg bg-white text-center w-full mx-2 flex flex-col h-full">
+                  <CardContent className="p-6 flex flex-col items-center flex-1">
+                    <div className="w-16 h-16 gradient-blue rounded-full flex items-center justify-center mx-auto mb-4">
+                      <value.icon className="h-8 w-8 text-white" />
+                    </div>
+                    <h3 className="text-xl font-semibold mb-3 text-gray-900">{value.title}</h3>
+                    <p className="text-gray-600">{value.description}</p>
+                  </CardContent>
+                </Card>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
       {/* Timeline */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 pb-[10rem] bg-gray-50 ">
         <div className="max-w-4xl mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Journey</h2>
             <p className="text-xl text-gray-600">Key milestones in our growth and evolution.</p>
           </div>
-          
+
           <div className="space-y-8">
             {milestones.map((milestone, index) => (
               <div key={index} className="flex items-center space-x-4">
@@ -201,7 +218,7 @@ const About = () => {
       </section>
 
       {/* Team */}
-      <section className="py-20 bg-white">
+      {/* <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Meet Our Team</h2>
@@ -209,7 +226,7 @@ const About = () => {
               The passionate professionals behind our success.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {team.map((member, index) => (
               <Card key={index} className="hover-lift border-0 shadow-lg bg-white text-center overflow-hidden">
@@ -231,10 +248,10 @@ const About = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Awards & Certifications */}
-      <section className="py-20 bg-gray-50">
+      {/* <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Awards & Recognition</h2>
@@ -242,7 +259,7 @@ const About = () => {
               Recognition for our commitment to excellence and innovation.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {awards.map((award, index) => (
               <Card key={index} className="border-0 shadow-lg bg-white p-6">
@@ -259,7 +276,7 @@ const About = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
